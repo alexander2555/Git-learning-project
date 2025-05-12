@@ -11,7 +11,10 @@ export const Calculator = () => {
       margin: '0 auto',
     }}>
       <Layout.Content>
-        <Row>
+        <Row gutter={[0, 8]}>
+          <Col span={24}>
+            <Input size={'large'} value={3} disabled />
+          </Col>
           <Col span={20}>
             <Row gutter={[8, 8]}>
               {numberActions.map(n => (
